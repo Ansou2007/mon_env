@@ -1,9 +1,9 @@
 services:
   laravel-docker:
-    container_name: laravel-project
+    container_name: coding-for-better-life
     build: .
     volumes:
-      - ./laravel-app:/var/www/html
+      - ./coding:/var/www/html
     ports:
       - 9000:80
 
@@ -11,7 +11,7 @@ services:
     image: mysql:latest
     environment:
        MYSQL_ROOT_PASSWORD: root
-       MYSQL_DATABASE: base_de_donnee
+       MYSQL_DATABASE: coding
     ports:
       - 3306:3306
 
